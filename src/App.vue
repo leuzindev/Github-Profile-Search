@@ -1,27 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <main>
+    <CardSearch />
+  </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import CardSearch from './components/CardSearch.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    CardSearch
   }
 });
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+main {
+  background: linear-gradient(179.16deg, #000227 16.6%, #0B13A9 99.32%);
+  height: 100vh;
+  width: 100vw;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
 }
 </style>
